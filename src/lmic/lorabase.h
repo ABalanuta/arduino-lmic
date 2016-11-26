@@ -69,7 +69,13 @@ enum { DR_PAGE = DR_PAGE_EU868 };
 //  g1 :   1%  14dBm
 //  g2 : 0.1%  14dBm
 //  g3 :  10%  27dBm
+#define Fre0 867700000
+#define Fre1 867900000
+#define Fre2 868100000
+#define Fre3 868300000
+#define Fre4 868500000
 //                 freq             band     datarates
+/*
 enum { EU868_F1 = 868100000,      // g1   SF7-12
        EU868_F2 = 868300000,      // g1   SF7-12 FSK SF7/250
        EU868_F3 = 868500000,      // g1   SF7-12
@@ -79,6 +85,18 @@ enum { EU868_F1 = 868100000,      // g1   SF7-12
        EU868_J4 = 864100000,      // g2   SF7-12  used during join
        EU868_J5 = 864300000,      // g2   SF7-12   ditto
        EU868_J6 = 864500000,      // g2   SF7-12   ditto
+};
+*/
+
+enum { EU868_F1 = Fre3,      // g1   SF7-12
+       EU868_F2 = Fre3,      // g1   SF7-12 FSK SF7/250
+       EU868_F3 = Fre3,      // g1   SF7-12
+       EU868_F4 = Fre3,      // g2   SF7-12
+       EU868_F5 = Fre3,      // g2   SF7-12
+       EU868_F6 = Fre3,      // g3   SF7-12
+       EU868_J4 = Fre3,      // g2   SF7-12  used during join
+       EU868_J5 = Fre3,      // g2   SF7-12   ditto
+       EU868_J6 = Fre3,      // g2   SF7-12   ditto
 };
 enum { EU868_FREQ_MIN = 863000000,
        EU868_FREQ_MAX = 870000000 };
